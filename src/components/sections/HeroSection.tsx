@@ -17,9 +17,9 @@ export default function HeroSection() {
                         </h1>
 
                         <p className="hero_description">
-                            Enjoy a beautifully furnished first-floor Veranda condo in the heart of
-                            Bonita National Golf & Country Club. Relax with spacious indoor-outdoor living and
-                            choose from optional resort amenities, golf, and golf cart access to create the vacation that's right for you.
+                            Enjoy a beautifully furnished first-floor Veranda condo in Bonita National Golf & Country Club.
+                            Relax with spacious indoor-outdoor living and customize your stay with optional resort amenities,
+                            golf, and golf cart access.
                         </p>
 
                         <div className="hero_actions">
