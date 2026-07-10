@@ -202,15 +202,32 @@ textarea {
   object-fit: cover;
 }
 
+@media (max-width: 900px) {
+  .hero_grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero_image_card img {
+    height: 360px;
+  }
+}
+
 @media (max-width: 600px) {
   .hero {
     min-height: auto;
     align-items: flex-start;
-    padding: 2.75rem 1.5rem 2rem;
+    padding: 1.5rem 1.5rem 2rem;
   }
 
   .hero_grid {
-    gap: 1.5rem;
+    width: 100%;
+    gap: 1.25rem;
+    align-items: start;
+  }
+
+  .hero_content {
+    width: 100%;
   }
 
   .hero_description {
@@ -218,8 +235,10 @@ textarea {
   }
 
   .hero_actions {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     gap: 0.9rem;
     margin-top: 1.5rem;
   }
@@ -230,21 +249,11 @@ textarea {
   }
 
   .hero_image_card {
-    margin-top: 0.25rem;
+    margin-top: 0rem;
   }
 
   .hero_image_card img {
     height: 320px;
-  }
-}
-
-@media (max-width: 900px) {
-  .hero_grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero_image_card img {
-    height: 360px;
   }
 }
 
