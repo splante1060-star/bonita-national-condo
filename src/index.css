@@ -220,6 +220,23 @@ textarea {
     padding: 1.5rem 1.5rem 2rem;
   }
 
+  .hero_eyebrow {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.9rem, 12vw, 3.4rem);
+    line-height: 0.98;
+    letter-spacing: -0.025rem;
+  }
+
+  .hero_description {
+    margin-top: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
   .hero_grid {
     width: 100%;
     gap: 1.25rem;
