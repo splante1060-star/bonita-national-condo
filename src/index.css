@@ -861,6 +861,7 @@ textarea {
   .split-section_grid--large,
   .split-section_grid--breakout,
   .split-section_grid--xlarge {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
   }
@@ -868,12 +869,13 @@ textarea {
   .split-section_content {
     order: 1 !important;
     width: 100%;
-    max-width: 100%;
+    max-width: none;
   }
 
   .split-section_image {
     order: 2 !important;
     width: 100%;
+    max-width: none;
   }
 
   .split-section_grid--breakout .split-section_image {
@@ -894,38 +896,72 @@ textarea {
 
 @media (max-width: 600px) {
   .split-section_grid {
-    gap: 1.5rem;
+    display: block;
+  }
+
+  .split-section_content,
+  .split-section_image {
+    width: 100%;
+    max-width: none;
   }
 
   .split-section_content h2 {
-    margin-bottom: 1rem;
-    font-size: clamp(2rem, 10vw, 2.75rem);
-    line-height: 1.05;
+    width: 100%;
+    max-width: none;
+
+    margin: 0 0 1.25rem;
+
+    font-size: clamp(2.5rem, 10vw, 3.15rem);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
   }
 
   .split-section_content p {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+
     font-size: 1rem;
     line-height: 1.7;
   }
 
   .split-section_content p+p {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  .split-section_image {
+    display: block;
+    margin-top: 2rem;
   }
 
   .split-section_image-stack {
-    gap: 1rem;
+    display: block;
+    width: 100%;
   }
 
   .split-section_primary-image,
   .split-section_secondary-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
     aspect-ratio: 4 / 3;
+    object-fit: cover;
+
     border-radius: 1.25rem;
+  }
+
+  .split-section_secondary-image {
+    margin-top: 1rem;
   }
 
   .split-section_footer {
     margin-top: 1.5rem;
   }
 }
+
 
 
 
