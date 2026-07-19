@@ -205,12 +205,6 @@ textarea {
 }
 
 @media (max-width: 600px) {
-  .section.hero {
-    min-height: auto;
-    align-items: flex-start;
-    padding: 2rem 1.5rem 2rem;
-  }
-
   .hero_eyebrow {
     margin: 0 0 1.25rem;
     font-size: 0.9rem;
@@ -292,7 +286,7 @@ textarea {
   box-shadow: 0 24px 70px rgba(24, 53, 45, 0.18);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .intro_grid {
     grid-template-columns: 1fr;
   }
@@ -1534,11 +1528,24 @@ textarea {
   }
 }
 
+/* MOBILE */
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 6rem);
+  }
 
-/* Responsive */
-@media (max-width: 760px) {
-  .section {
-    padding: 3.5rem 0;
+  .section.hero {
+    min-height: auto;
+    align-items: flex-start;
+    padding: 2rem 0;
+  }
+
+  .highlights {
+    padding: 3.5rem 0 1.5rem;
+  }
+
+  .intro {
+    padding: 1.5rem 0 3.5rem;
   }
 
   .intro_grid {
