@@ -166,15 +166,6 @@ textarea {
   line-height: 0.95;
 }
 
-.hero h1 span {
-  display: block;
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  font-size: clamp(2.5rem, 5vw, 5rem);
-  font-weight: 500;
-  opacity: 0.9;
-}
-
 .hero_description {
   margin: 1.5rem 0 0;
   max-width: 640px;
@@ -214,63 +205,23 @@ textarea {
 }
 
 @media (max-width: 600px) {
-  .hero {
+  .section.hero {
     min-height: auto;
     align-items: flex-start;
-    padding: 1.5rem 1.5rem 2rem;
+    padding: 2rem 1.5rem 2rem;
   }
 
   .hero_eyebrow {
+    margin: 0 0 1.25rem;
     font-size: 0.9rem;
     line-height: 1.4;
   }
 
   .hero h1 {
+    margin: 0 0 1.25rem;
     font-size: clamp(2.9rem, 12vw, 3.4rem);
     line-height: 0.98;
     letter-spacing: -0.025rem;
-  }
-
-  .hero_description {
-    margin-top: 1.25rem;
-    font-size: 1.05rem;
-    line-height: 1.65;
-  }
-
-  .hero_grid {
-    width: 100%;
-    gap: 1.25rem;
-    align-items: start;
-  }
-
-  .hero_content {
-    width: 100%;
-  }
-
-  .hero_description {
-    margin-top: 1.25rem;
-  }
-
-  .hero_actions {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 0.9rem;
-    margin-top: 1.5rem;
-  }
-
-  .hero_actions .button {
-    width: 260px;
-    max-width: 100%;
-  }
-
-  .hero_image_card {
-    margin-top: 0rem;
-  }
-
-  .hero_image_card img {
-    height: 320px;
   }
 }
 

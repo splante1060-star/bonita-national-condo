@@ -12,8 +12,8 @@ export default function HeroSection() {
 
                         <p className="hero_eyebrow">Bonita National Golf & Country Club • Bonita Springs, Florida</p>
 
-                        <h1>Plan Your Stay At
-                            <h1>Unit 1912</h1>
+                        <h1>
+                            Plan Your Stay At Unit 1912
                         </h1>
 
                         <p className="hero_description">
