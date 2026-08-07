@@ -112,16 +112,6 @@ export default function AmenitiesPage() {
                 imagePosition="left"
                 imageSize="large"
                 layout="stacked"
-                footer={
-                    <a
-                        className="button button--secondary"
-                        href="https://drive.google.com/file/d/12izVbmji80wuldiCTZR38mR6uyuzBghx/view"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        View Dining Menus
-                    </a>
-                }
             >
 
                 <h2>From poolside bites to clubhouse evenings.</h2>
