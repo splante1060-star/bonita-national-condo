@@ -76,17 +76,17 @@ textarea {
   backdrop-filter: blue(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  color: #f6f1e7;
+  color: #b78b47;
 
-  border: 1px solid rgba(246, 241, 231, 0.75);
+  border: 1px solid #b78b47;
 
   transition: all 0.25s ease;
 }
 
 .button--secondary:hover {
-  background: rgba(246, 241, 231, 0.22);
-  border-color: #ffffff;
-  color: #ffffff;
+  background: #b78a474b;
+  border-color: #b78b47;
+  color: #b78b47;
   transform: translateY(-2px);
 }
 
@@ -1094,12 +1094,16 @@ textarea {
 /* Pool Gallery */
 .pool-gallery {
   background: #ffffff;
-  padding-top: 0;
+  padding-top: 1;
 }
 
 .pool-gallery_intro {
-  max-width: 980px;
-  margin-bottom: 2.5rem;
+  /* max-width: 980px;
+  margin-bottom: 2.5rem; */
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.25rem, 4vw, 4rem);
+  line-height: 1;
+  color: #18352d;
 }
 
 .pool-gallery_intro h2 {
