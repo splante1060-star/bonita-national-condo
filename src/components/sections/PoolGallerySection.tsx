@@ -29,7 +29,6 @@ export default function PoolGallerySection() {
                     viewport={{ once: true, amount: 0.25 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                    <Eyebrow>Resort Pools</Eyebrow>
                     <h2>From sunny swims to evening lounging.</h2>
                     <p>The resort pool area is one of Bonita National’s signature spaces,
                         offering a beautiful setting to swim, relax, gather, and unwind.</p>
