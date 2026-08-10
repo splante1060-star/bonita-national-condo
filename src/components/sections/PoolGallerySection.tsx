@@ -1,6 +1,5 @@
 import { poolPhotos } from "../../data/poolPhotos";
 import Container from "../layout/Container";
-import Eyebrow from "../ui/Eyebrow";
 import Section from "../ui/Section";
 import { useState } from "react";
 import { motion } from "motion/react";
