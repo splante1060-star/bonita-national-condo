@@ -1,8 +1,6 @@
 import PageHero from "../components/sections/PageHero";
-import SplitSection from "../components/sections/SplitSection";
 import Container from "../components/layout/Container";
 import Section from "../components/ui/Section";
-import ImageRow from "../components/ui/ImageRow";
 import FeatureCallout from "../components/ui/FeatureCallout";
 import PetsIcon from '@mui/icons-material/Pets';
 import TourTextSection from "../components/sections/TourTextSection";
@@ -20,8 +18,14 @@ export default function TourPage() {
                 moment you arrive."
             />
 
+
             {/* FRONT LANAI */}
-            <TourTextSection>
+            <TourTextSection
+                image="/images/tour/front-lanai1.jpg"
+                imageAlt="Front lanai at Unit 1912"
+                secondaryImage="/images/tour/front-lanai2.jpg"
+                secondaryImageAlt="Front lanai at Unit 1912"
+            >
                 <h2>A quiet place to begin the day.</h2>
 
                 <p>
@@ -42,26 +46,14 @@ export default function TourPage() {
 
             </TourTextSection>
 
-            <Section className="tour-image-row-selection">
-                <Container>
-                    <ImageRow
-                        images={[
-                            {
-                                src: "/images/tour/front-lanai1.jpg",
-                                alt: "Front lanai at Unit 1912",
-                            },
-                            {
-                                src: "/images/tour/front-lanai2.jpg",
-                                alt: "Front lanai at Unit 1912",
-                            },
-                        ]}
-                    />
-                </Container>
-            </Section>
-
 
             {/* KITCHEN */}
-            <TourTextSection>
+            <TourTextSection
+                image="/images/tour/kitchen.jpg"
+                imageAlt="Kitchen at Unit 1912"
+                secondaryImage="/images/tour/breakfast-nook.jpg"
+                secondaryImageAlt="Breakfast Nook at Unit 1912"
+            >
                 <h2>Where comfort meets comfort food.</h2>
 
                 <p>
@@ -91,30 +83,12 @@ export default function TourPage() {
 
             </TourTextSection>
 
-            <Section className="tour-image-row-selection">
-                <Container>
-                    <ImageRow
-                        images={[
-                            {
-                                src: "/images/tour/kitchen.jpg",
-                                alt: "Kitchen at Unit 1912",
-                            },
-                            {
-                                src: "/images/tour/breakfast-nook.jpg",
-                                alt: "Breakfast Nook at Unit 1912",
-                            },
-                        ]}
-                    />
-                </Container>
-            </Section>
-
 
             {/* DINING AREA */}
-            <SplitSection
+            <TourTextSection
                 image="/images/tour/dining.jpg"
                 imageAlt="Dining Area at Unit 1912"
                 imagePosition="left"
-                imageSize="xlarge"
             >
                 <h2>Gather for easy meals and unhurried evenings.</h2>
 
@@ -126,11 +100,16 @@ export default function TourPage() {
                     Bar seating along the kitchen counter provides additional space for casual
                     meals, morning coffee, or keeping the cook company.
                 </p>
+            </TourTextSection>
 
-            </SplitSection>
 
             {/* LIVING AREA */}
-            <TourTextSection>
+            <TourTextSection
+                image="/images/tour/living1.jpg"
+                imageAlt="Living Area at Unit 1912"
+                secondaryImage="/images/tour/living2.jpg"
+                secondaryImageAlt="Living Area at Unit 1912"
+            >
                 <h2>Relax into the rhythm of resort living.</h2>
 
                 <p>
@@ -149,31 +128,21 @@ export default function TourPage() {
 
             </TourTextSection>
 
-            <Section className="tour-image-row-selection">
-                <Container>
-                    <ImageRow
-                        images={[
-                            {
-                                src: "/images/tour/living1.jpg",
-                                alt: "Living Area at Unit 1912",
-                            },
-                            {
-                                src: "/images/tour/living2.jpg",
-                                alt: "Living Area at Unit 1912",
-                            },
-                        ]}
-                    />
-                </Container>
-            </Section>
-
-
 
             {/* PRIMARY BEDROOM */}
-            <SplitSection
+            <TourTextSection
                 image="/images/tour/primary-bed.jpg"
                 imageAlt="Primary Bedroom at Unit 1912"
-                imagePosition="right"
-                imageSize="xlarge"
+                supportingImages={[
+                    {
+                        src: "/images/tour/primary-bath.jpg",
+                        alt: "Primary bathroom at Unit 1912",
+                    },
+                    {
+                        src: "/images/tour/primary-bed2.jpg",
+                        alt: "Primary bedroom details at Unit 1912",
+                    },
+                ]}
             >
                 <h2>Your private retreat with room to unwind</h2>
 
@@ -199,34 +168,14 @@ export default function TourPage() {
                     for recharging after time on the course, by the pool, or
                     exploring the area.
                 </p>
-
-            </SplitSection>
-
-            <Section className="tour-image-row-selection">
-                <Container>
-                    <ImageRow
-                        images={[
-                            {
-                                src: "/images/tour/primary-bath.jpg",
-                                alt: "Primary bathroom at Unit 1912",
-                            },
-                            {
-                                src: "/images/tour/primary-bed2.jpg",
-                                alt: "Primary bedroom details at Unit 1912",
-                            },
-                        ]}
-                    />
-                </Container>
-            </Section>
-
+            </TourTextSection>
 
 
             {/* GUEST BEDROOM 1 */}
-            <SplitSection
+            <TourTextSection
                 image="/images/tour/guest-bed1.jpg"
                 imageAlt="Guest Bedroom 1 at Unit 1912"
                 imagePosition="left"
-                imageSize="xlarge"
             >
                 <h2>Comfortable accommodations for family or friends.</h2>
 
@@ -239,15 +188,13 @@ export default function TourPage() {
                     on work while enjoying the calm, coastal-inspired
                     design.
                 </p>
+            </TourTextSection>
 
-            </SplitSection>
 
             {/* GUEST BEDROOM 2 */}
-            <SplitSection
+            <TourTextSection
                 image="/images/tour/den.jpg"
                 imageAlt="Guest Bedroom 2 / Den at Unit 1912"
-                imagePosition="right"
-                imageSize="xlarge"
             >
                 <h2>A flexible space for work, guests, or quiet downtime.</h2>
 
@@ -260,15 +207,14 @@ export default function TourPage() {
                     the dining area, keeping the space connected yet
                     easily closed off for privacy when needed.
                 </p>
+            </TourTextSection>
 
-            </SplitSection>
 
             {/* GUEST BATHROOM */}
-            <SplitSection
+            <TourTextSection
                 image="/images/tour/guest-bath.jpg"
                 imageAlt="Guest Bathroom at Unit 1912"
                 imagePosition="left"
-                imageSize="xlarge"
             >
                 <h2>Clean, convenient, and thoughtfully appointed.</h2>
 
@@ -278,11 +224,8 @@ export default function TourPage() {
                     comfortable and versatile for all guests. Clean, bright finishes and ample
                     counter space make it easy to get ready for the day or unwind in the
                     evening.
-
-
                 </p>
-
-            </SplitSection>
+            </TourTextSection>
 
             <Section className="bedroom-amenities">
                 <Container>
@@ -301,11 +244,9 @@ export default function TourPage() {
             </Section>
 
             {/* LAUNDRY */}
-            <SplitSection
+            <TourTextSection
                 image="/images/tour/laundry.jpg"
                 imageAlt="Laundry at Unit 1912"
-                imagePosition="right"
-                imageSize="xlarge"
             >
                 <h2>Everything you need for a longer stay.</h2>
 
@@ -316,11 +257,16 @@ export default function TourPage() {
                     golf attire, or everyday essentials, this thoughtfully placed laundry space
                     helps make your stay feel effortless and well cared for.
                 </p>
+            </TourTextSection>
 
-            </SplitSection>
 
             {/* BACK LANAI */}
-            <TourTextSection>
+            <TourTextSection
+                image="/images/tour/back-lanai1.jpg"
+                imageAlt="Back Lanai at Unit 1912"
+                secondaryImage="/images/tour/back-lanai2.jpg"
+                secondaryImageAlt="Back Lanai at Unit 1912"
+            >
                 <h2>End the day with peaceful golf course views.</h2>
 
                 <p>
@@ -339,23 +285,6 @@ export default function TourPage() {
                 </p>
 
             </TourTextSection>
-
-            <Section className="tour-image-row-selection">
-                <Container>
-                    <ImageRow
-                        images={[
-                            {
-                                src: "/images/tour/back-lanai1.jpg",
-                                alt: "Back Lanai at Unit 1912",
-                            },
-                            {
-                                src: "/images/tour/back-lanai2.jpg",
-                                alt: "Back Lanai details at Unit 1912",
-                            },
-                        ]}
-                    />
-                </Container>
-            </Section>
 
 
             {/* LAYOUT PLAN */}
