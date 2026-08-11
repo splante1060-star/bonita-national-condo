@@ -4,6 +4,7 @@ import Section from "../components/ui/Section";
 import FeatureCallout from "../components/ui/FeatureCallout";
 import PetsIcon from '@mui/icons-material/Pets';
 import TourTextSection from "../components/sections/TourTextSection";
+import ExpandableImage from "../components/ui/ExpandableImage";
 
 export default function TourPage() {
     return (
@@ -312,7 +313,7 @@ export default function TourPage() {
                     </div>
 
                     <div className="tour-map-section_image">
-                        <img
+                        <ExpandableImage
                             src="/images/tour/layout.jpg"
                             alt="Layout plan for Unit 1912"
                         />

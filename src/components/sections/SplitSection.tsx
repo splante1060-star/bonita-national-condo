@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import Container from "../layout/Container";
 import Section from "../ui/Section";
+import ExpandableImage from "../ui/ExpandableImage";
 
 type SplitSectionProps = {
     children: React.ReactNode;
@@ -36,9 +37,9 @@ export default function SplitSection({ children, footer, image, imageAlt, second
                         viewport={{ once: true, amount: 0.25 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}>
                         <div className={`split-section_image-stack ${secondaryImage ? "split-section_image-stack--double" : ""}`}>
-                            <img className="split-section_primary-image" src={image} alt={imageAlt} />
+                            <ExpandableImage className="split-section_primary-image" src={image} alt={imageAlt} />
                             {secondaryImage && secondaryImageAlt && (
-                                <img className="split-section_secondary-image" src={secondaryImage} alt={secondaryImageAlt} />
+                                <ExpandableImage className="split-section_secondary-image" src={secondaryImage} alt={secondaryImageAlt} />
                             )}
                         </div>
                         {footer && (

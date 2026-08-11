@@ -1,4 +1,5 @@
 import Container from "../layout/Container";
+import ExpandableImage from "../ui/ExpandableImage";
 import Eyebrow from "../ui/Eyebrow";
 import Section from "../ui/Section";
 
@@ -23,7 +24,7 @@ export default function PageHero({ eyebrow, title, description, image, imageAlt 
 
                     {image && (
                         <div className="page-hero_image">
-                            <img src={image} alt={imageAlt} />
+                            <ExpandableImage src={image} alt={imageAlt} />
                         </div>
                     )}
                 </div>

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowBackRounded } from "@mui/icons-material";
 import { ArrowForwardRounded } from "@mui/icons-material";
+import ExpandableImage from "../ui/ExpandableImage";
 
 export default function PoolGallerySection() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,7 +51,7 @@ export default function PoolGallerySection() {
                     </button>
 
                     <div className="pool-carousel_content">
-                        <img src={currentPhoto.src} alt={currentPhoto.alt} />
+                        <ExpandableImage src={currentPhoto.src} alt={currentPhoto.alt} />
 
                         <p>{currentPhoto.caption}</p>
                     </div>

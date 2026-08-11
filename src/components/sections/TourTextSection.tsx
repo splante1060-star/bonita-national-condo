@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import Container from "../layout/Container";
 import Section from "../ui/Section";
+import ExpandableImage from "../ui/ExpandableImage";
 
 type TourImage = {
     src: string;
@@ -54,14 +55,14 @@ export default function TourTextSection({ children, image, imageAlt = "", second
                                 delay: 0.1,
                             }}
                         >
-                            <img
+                            <ExpandableImage
                                 className="tour-text-section_image"
                                 src={image}
                                 alt={imageAlt}
                             />
 
                             {secondaryImage && (
-                                <img
+                                <ExpandableImage
                                     className="tour-text-section_image"
                                     src={secondaryImage}
                                     alt={secondaryImageAlt}
@@ -84,7 +85,7 @@ export default function TourTextSection({ children, image, imageAlt = "", second
                         }}
                     >
                         {supportingImages.map((supportingImage) => (
-                            <img
+                            <ExpandableImage
                                 key={supportingImage.src}
                                 src={supportingImage.src}
                                 alt={supportingImage.alt}
