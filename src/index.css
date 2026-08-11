@@ -170,6 +170,7 @@ textarea {
   justify-content: center;
 
   padding: 3rem;
+  
 
   background: rgba(8, 18, 15, 0.9);
   backdrop-filter: blur(8px);
@@ -216,6 +217,59 @@ textarea {
   font-size: 1.75rem;
 }
 
+.image-dialog_nav {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 3.5rem;
+  height: 3.5rem;
+
+  transform: translateY(-50%);
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #18352d;
+  color: white;
+
+  cursor: pointer;
+}
+
+.image-dialog_nav--left {
+  left: 1.5rem;
+}
+
+.image-dialog_nav--right {
+  right: 1.5rem;
+}
+
+.image-dialog_nav svg {
+  font-size: 2rem;
+}
+
+.image-dialog_counter {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 0.5rem 0.85rem;
+
+  border-radius: 999px;
+
+  background: #18352d;
+  color: white;
+
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
 @media (max-width: 600px) {
   .image-dialog {
     padding: 1rem;
@@ -230,6 +284,23 @@ textarea {
   .image-dialog_close {
     top: 1rem;
     right: 1rem;
+  }
+
+  .image-dialog_nav {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .image-dialog_nav--left {
+    left: 0.75rem;
+  }
+
+  .image-dialog_nav--right {
+    right: 0.75rem;
+  }
+
+  .image-dialog_counter {
+    bottom: 1rem;
   }
 }
 

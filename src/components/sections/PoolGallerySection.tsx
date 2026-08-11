@@ -51,7 +51,7 @@ export default function PoolGallerySection() {
                     </button>
 
                     <div className="pool-carousel_content">
-                        <ExpandableImage src={currentPhoto.src} alt={currentPhoto.alt} />
+                        <ExpandableImage src={currentPhoto.src} alt={currentPhoto.alt} gallery={poolPhotos} />
 
                         <p>{currentPhoto.caption}</p>
                     </div>
