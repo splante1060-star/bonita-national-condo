@@ -4,7 +4,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 type ButtonProps = {
     children: React.ReactNode;
     to: string;
-    variant?: "primary" | "secondary";
+    variant?: "primary" | "secondary" | "tertiary";
     showArrow?: boolean;
 };
 

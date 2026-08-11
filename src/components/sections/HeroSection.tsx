@@ -26,7 +26,7 @@ export default function HeroSection() {
                             <Button to="/contact" variant="primary">
                                 Inquire About Availability
                             </Button>
-                            <Button to="/tour" variant="secondary">
+                            <Button to="/tour" variant="tertiary">
                                 View the Condo
                             </Button>
                         </div>
