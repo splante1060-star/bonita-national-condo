@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import Container from "../layout/Container";
 import Section from "../ui/Section";
 import ExpandableImage from "../ui/ExpandableImage";
+import { tourGallery } from "../../data/tourGallery";
 
 type TourImage = {
     src: string;
@@ -59,6 +60,7 @@ export default function TourTextSection({ children, image, imageAlt = "", second
                                 className="tour-text-section_image"
                                 src={image}
                                 alt={imageAlt}
+                                gallery={tourGallery}
                             />
 
                             {secondaryImage && (
@@ -66,6 +68,7 @@ export default function TourTextSection({ children, image, imageAlt = "", second
                                     className="tour-text-section_image"
                                     src={secondaryImage}
                                     alt={secondaryImageAlt}
+                                    gallery={tourGallery}
                                 />
                             )}
                         </motion.div>
@@ -89,6 +92,7 @@ export default function TourTextSection({ children, image, imageAlt = "", second
                                 key={supportingImage.src}
                                 src={supportingImage.src}
                                 alt={supportingImage.alt}
+                                gallery={tourGallery}
                             />
                         ))}
                     </motion.div>

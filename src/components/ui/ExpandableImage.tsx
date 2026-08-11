@@ -14,6 +14,7 @@ type ExpandableImageProps = {
     alt: string;
     className?: string;
     gallery?: GalleryImage[];
+    galleryId?: string;
 };
 
 export default function ExpandableImage({ src, alt, className="", gallery}: ExpandableImageProps) {
