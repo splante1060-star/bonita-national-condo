@@ -1,5 +1,6 @@
 import PageHero from "../components/sections/PageHero";
 // import AmenityGroupsSection from "../components/sections/AmenityGroupsSection";
+import ExpandableImage from "../components/ui/ExpandableImage";
 import SplitSection from "../components/sections/SplitSection";
 import PoolGallerySection from "../components/sections/PoolGallerySection";
 import Section from "../components/ui/Section";
@@ -141,7 +142,7 @@ export default function AmenitiesPage() {
                         </p>
                     </div>
                     <div className="amenity-map-section__image">
-                        <img
+                        <ExpandableImage
                             src="/images/amenities/amenity-map.png"
                             alt="Amenity map of Bonita National Golf and Country Club"
                         />

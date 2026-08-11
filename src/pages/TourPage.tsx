@@ -22,6 +22,7 @@ export default function TourPage() {
 
             {/* FRONT LANAI */}
             <TourTextSection
+                sectionId="front-lanai"
                 image="/images/tour/front-lanai1.jpg"
                 imageAlt="Front lanai at Unit 1912"
                 secondaryImage="/images/tour/front-lanai2.jpg"
@@ -50,6 +51,7 @@ export default function TourPage() {
 
             {/* KITCHEN */}
             <TourTextSection
+                sectionId="kitchen"
                 image="/images/tour/kitchen.jpg"
                 imageAlt="Kitchen at Unit 1912"
                 secondaryImage="/images/tour/breakfast-nook.jpg"
@@ -87,6 +89,7 @@ export default function TourPage() {
 
             {/* DINING AREA */}
             <TourTextSection
+                sectionId="dining"
                 image="/images/tour/dining.jpg"
                 imageAlt="Dining Area at Unit 1912"
                 imagePosition="left"
@@ -106,6 +109,7 @@ export default function TourPage() {
 
             {/* LIVING AREA */}
             <TourTextSection
+                sectionId="living"
                 image="/images/tour/living1.jpg"
                 imageAlt="Living Area at Unit 1912"
                 secondaryImage="/images/tour/living2.jpg"
@@ -132,16 +136,19 @@ export default function TourPage() {
 
             {/* PRIMARY BEDROOM */}
             <TourTextSection
+                sectionId="primary-bed"
                 image="/images/tour/primary-bed.jpg"
                 imageAlt="Primary Bedroom at Unit 1912"
                 supportingImages={[
                     {
                         src: "/images/tour/primary-bath.jpg",
                         alt: "Primary bathroom at Unit 1912",
+                        sectionId: "primary-bed",
                     },
                     {
                         src: "/images/tour/primary-bed2.jpg",
                         alt: "Primary bedroom details at Unit 1912",
+                        sectionId: "primary-bed",
                     },
                 ]}
             >
@@ -174,6 +181,7 @@ export default function TourPage() {
 
             {/* GUEST BEDROOM 1 */}
             <TourTextSection
+                sectionId="guest-bed1"
                 image="/images/tour/guest-bed1.jpg"
                 imageAlt="Guest Bedroom 1 at Unit 1912"
                 imagePosition="left"
@@ -194,6 +202,7 @@ export default function TourPage() {
 
             {/* GUEST BEDROOM 2 */}
             <TourTextSection
+                sectionId="den"
                 image="/images/tour/den.jpg"
                 imageAlt="Guest Bedroom 2 / Den at Unit 1912"
             >
@@ -213,6 +222,7 @@ export default function TourPage() {
 
             {/* GUEST BATHROOM */}
             <TourTextSection
+                sectionId="guest-bath"
                 image="/images/tour/guest-bath.jpg"
                 imageAlt="Guest Bathroom at Unit 1912"
                 imagePosition="left"
@@ -246,6 +256,7 @@ export default function TourPage() {
 
             {/* LAUNDRY */}
             <TourTextSection
+                sectionId="laundry"
                 image="/images/tour/laundry.jpg"
                 imageAlt="Laundry at Unit 1912"
             >
@@ -263,6 +274,7 @@ export default function TourPage() {
 
             {/* BACK LANAI */}
             <TourTextSection
+                sectionId="back-lanai"
                 image="/images/tour/back-lanai1.jpg"
                 imageAlt="Back Lanai at Unit 1912"
                 secondaryImage="/images/tour/back-lanai2.jpg"

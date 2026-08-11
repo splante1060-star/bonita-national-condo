@@ -4,9 +4,10 @@ import Section from "../ui/Section";
 import ExpandableImage from "../ui/ExpandableImage";
 import { tourGallery } from "../../data/tourGallery";
 
-type TourImage = {
+type TourGalleryImage = {
     src: string;
     alt: string;
+    sectionId: string;
 };
 
 type TourTextSectionProps = {
@@ -16,15 +17,16 @@ type TourTextSectionProps = {
     secondaryImage?: string;
     secondaryImageAlt?: string;
     imagePosition?: "left" | "right";
-    supportingImages?: TourImage[];
+    supportingImages?: TourGalleryImage[];
+    sectionId?: string;
 };
 
-export default function TourTextSection({ children, image, imageAlt = "", secondaryImage, secondaryImageAlt = "", imagePosition = "right", supportingImages }: TourTextSectionProps) {
+export default function TourTextSection({ children, image, imageAlt = "", secondaryImage, secondaryImageAlt = "", imagePosition = "right", supportingImages, sectionId }: TourTextSectionProps) {
     const hasImage = Boolean(image);
     const hasDoubleImage = Boolean(image && secondaryImage);
 
     return (
-        <Section className="tour-text-section">
+        <Section id={sectionId} className="tour-text-section">
             <Container>
                 <div
                     className={

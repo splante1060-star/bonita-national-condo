@@ -7,6 +7,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 type GalleryImage = {
     src: string;
     alt: string;
+    sectionId?: string;
 };
 
 type ExpandableImageProps = {
@@ -19,6 +20,7 @@ type ExpandableImageProps = {
 
 export default function ExpandableImage({ src, alt, className="", gallery}: ExpandableImageProps) {
     const [isOpen, setIsOpen] = useState(false);
+    const [openedIndex, setOpenedIndex] = useState(0);
 
     const images = gallery?.length
         ? gallery
@@ -39,15 +41,26 @@ export default function ExpandableImage({ src, alt, className="", gallery}: Expa
 
     const openImage = () => {
         setActiveIndex(initialIndex);
+        setOpenedIndex(initialIndex);
         setIsOpen(true);
     };
+
+    const closeImage = () => {
+        const hasNavigated = activeIndex != openedIndex;
+
+        if (hasNavigated && activeImage.sectionId) {
+            document.getElementById(activeImage.sectionId)?.scrollIntoView({behavior: "smooth", block: "center"});
+        }
+
+        setIsOpen(false);
+    }
 
     useEffect(() => {
         if (!isOpen) return;
 
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                setIsOpen(false);
+                closeImage();
             }
             if (event.key === "ArrowLeft" && hasMultipleImages) {
                 showPrevious();
@@ -83,14 +96,14 @@ export default function ExpandableImage({ src, alt, className="", gallery}: Expa
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        onClick={() => setIsOpen(false)}
+                        onClick={closeImage}
                         role="dialog"
                         aria-modal="true"
                         aria-label={alt}
                     >
                         <button
                             className="image-dialog_close"
-                            onClick={() => setIsOpen(false)}
+                            onClick={closeImage}
                             aria-label="Close image"
                         >
                             <CloseIcon />
