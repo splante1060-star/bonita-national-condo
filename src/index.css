@@ -154,14 +154,12 @@ textarea {
 }
 
 /* Expandable Images */
-
 .expandable-image {
   cursor: zoom-in;
 }
 
 
 /* Image Dialog */
-
 .image-dialog {
   position: fixed;
   inset: 0;
