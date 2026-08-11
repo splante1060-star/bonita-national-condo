@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <img
-                src="images/bonita-logo.png"
+                src="public/images/bonita-logo.png"
                 alt="Bonita National Golf Condo"
                 className="footer_logo"
             />
