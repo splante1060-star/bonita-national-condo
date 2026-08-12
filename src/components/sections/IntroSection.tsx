@@ -15,7 +15,7 @@ export default function IntroSection({ buttonText, buttonTo }: IntroSectionProps
                         <h2>Your Home Away From Home</h2>
 
                         <p>
-                            Spacious, bright, and thoughtfully furnished, Unit 1912 is designed
+                            Spacious, bright, and thoughtfully furnished, the condo is designed
                             for comfortable extended stays. Enjoy open living spaces, two screened
                             lanais, and peaceful golf course views that invite you to slow down and unwind.
                         </p>
@@ -49,7 +49,7 @@ export default function IntroSection({ buttonText, buttonTo }: IntroSectionProps
                     <div className="intro_image">
                         <img
                             src="/images/intro/intro-feature.jpg"
-                            alt="Unit 1912 Location"
+                            alt="Condo Location"
                         />
                     </div>
                 </div>

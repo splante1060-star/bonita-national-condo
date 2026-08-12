@@ -13,7 +13,7 @@ export default function HighlightsSection() {
 
                     <p>
                         From spacious indoor-outdoor living to optional resort experiences,
-                        Unit 1912 is designed for comfort, convenience, and a true Southwest
+                        the condo is designed for comfort, convenience, and a true Southwest
                         Florida escape.
                     </p>
                 </div>
