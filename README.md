@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+# Bonita National Vacation Rental Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive vacation rental website for a private condo located in **Bonita National Golf & Country Club** in Bonita Springs, Florida.
 
-Currently, two official plugins are available:
+Built with React, TypeScript, and Vite, the website provides an elegant, luxury-inspired browsing experience for prospective guests while showcasing the community, amenities, golf membership options, golf cart rental, and the condominium itself.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design for desktop, tablet, and mobile
+- Full-screen hero with immersive imagery
+- Animated page transitions
+- Dedicated pages for:
+  - About Bonita National
+  - Amenities
+  - Golf Membership
+  - Golf Cart Rental
+  - Take the Tour
+  - Resources
+  - Contact
+- Image galleries
+- Reusable React components
+- Modern typography and luxury-inspired styling
+- Optimized for deployment with Vercel
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Built With
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Vite
+- React Router
+- CSS Modules / Custom CSS
+- Framer Motion
+- Material UI Icons
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   └── ui/
+│
+├── data/
+│
+├── pages/
+│
+├── hooks/
+│
+├── styles/
+│
+└── assets/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Development
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Install dependencies:
+
+```bash
+npm install
 ```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Deployment
+
+The project is deployed with **Vercel**.
+
+Every push to the main branch automatically triggers a new production deployment.
+
+---
+
+## Design Goals
+
+The website was designed to reflect the upscale feel of Bonita National Golf & Country Club while remaining simple to navigate and informative for prospective guests.
+
+Key design principles include:
+
+- Large, immersive photography
+- Elegant serif typography
+- Responsive layouts
+- Clean spacing and hierarchy
+- Reusable components
+- Fast performance
+
+---
+
+## Status
+
+This project is actively maintained and continually refined with improvements to design, usability, responsiveness, and content.
