@@ -35,8 +35,11 @@ export default function HeroSection() {
         </div>
 
         {/* <div className="hero_image_card">
-                        <img src="/images/hero/hero-feature.jpg" alt="Bonita National Condo Living Space" />
-                    </div> */}
+          <img
+            src="/images/hero/hero-feature.jpg"
+            alt="Bonita National Condo Living Space"
+          />
+        </div> */}
         {/* </div> */}
 
         <ScrollIndicator targetId="highlights" />
