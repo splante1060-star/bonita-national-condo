@@ -7,16 +7,15 @@ export default function CartPage() {
     return (
         <>
             <PageHero
-                eyebrow="Golf Cart Rental"
                 title="Cruise Bonita National in comfort and style."
-                description="Guests staying at Unit 1912 may add our private four-seat golf cart to their rental for an easy, fun, and elevated way to enjoy the community."
+                description="Guests staying may add our private four-seat golf cart to their rental for an easy, fun, and elevated way to enjoy the community."
             />
 
             <Section className="amenities-note">
                 <Container>
                     <p>
-                        The private golf cart is available as an optional rental add-on for guests
-                        of Unit 1912. Rental fees, availability, usage rules, and security deposit
+                        The private golf cart is available as an optional rental add-on for guests. 
+                        Rental fees, availability, usage rules, and security deposit
                         requirements may vary by stay.
                     </p>
                 </Container>
@@ -24,7 +23,7 @@ export default function CartPage() {
 
             <SplitSection
                 image="/images/cart/golf-cart.jpg"
-                imageAlt="Private four-seat golf cart available with Unit 1912"
+                imageAlt="Private four-seat golf cart available"
                 imagePosition="right"
                 imageSize="large"
             >

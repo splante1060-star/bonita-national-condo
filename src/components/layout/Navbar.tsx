@@ -40,10 +40,14 @@ export default function Navbar() {
 
     return (
         <header className={`navbar ${isScrolled ? "navbar--scrolled" : ""}`}>
-            <NavLink to="/" className="navbar_logo">
-                <img src="/images/bonita-logo.png" alt="Bonita National G&CC" />
-                <span>Bonita National Unit 1912</span>
-            </NavLink>
+        <NavLink to="/" className="navbar_logo">
+            <img src="/images/bonita-logo.png" alt="Bonita National G&CC" />
+
+            <div className="navbar_logo-text">
+                <span className="navbar_logo-title">Bonita National</span>
+                <span className="navbar_logo-subtitle">Vacation Rental</span>
+            </div>
+        </NavLink>
 
             <nav className="navbar_links">
                 {navLinks.map((link) => (

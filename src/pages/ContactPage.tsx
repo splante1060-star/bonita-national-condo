@@ -9,9 +9,8 @@ export default function ContactPage() {
     return (
         <>
             <PageHero
-                eyebrow="Contact"
                 title="Let's plan your stay."
-                description="Every great getaway starts with a conversation. Whether you're checking availability or planning an extended stay, we're happy to answer your questions and help you prepare for your time at Unit 1912." />
+                description="Every great getaway starts with a conversation. Whether you're checking availability or planning an extended stay, we're happy to answer your questions and help you prepare for your time here at Bonita." />
 
             <Section className="contact-actions">
                 <Container>
@@ -68,7 +67,7 @@ export default function ContactPage() {
                 <Container>
 
                     <p>
-                        We look forward to welcoming you to Unit 1912.
+                        We look forward to welcoming you home.
                     </p>
 
                 </Container>
